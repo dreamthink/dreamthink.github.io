@@ -14,39 +14,39 @@ featured_image: /images/mountain.jpg
 	<div class="wrap">
 
 		<h1>Writing</h1>
-		<p>Stay tuned for updates.</p>
 
 	</div>
 
 </section>
 
-<!-- <section class="listing">
+<section class="listing">
 
 	<div class="wrap">
 
 		{% for post in paginator.posts %}
 
 		<article class="post">
-
+				<a href="https://medium.com/@emily.c.chen/what-ive-learned-from-rock-climbing-1677f17b989e?source=friends_link&sk=c367a9f9b1961b2b3d502d69c6fc8f63">
 			<div class="post__image-wrap">
-				<div class="post__image" style="background-image: url({{ post.featured_image }})"></div>
+				<div class="post__image" style="background-image: url('/images/gotg.jpg')"></div>
 			</div>
 
 			<div class="post__content-wrap">
 				<div class="post__content">
-					<h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-					<p class="post__subtitle">{{ post.subtitle }}</p>
-					<p class="post__description">{{ post.description }}</p>
+					<h2 class="post__title">
+						{{ post.title }}
+					</h2>
+					<p class="post__description">Facing your fears, thinking creatively, and analyzing risk like a boss</p>
 				</div>
 			</div>
-
+			</a>
 		</article>
 
 		{% endfor %}
 
 	</div>
 
-</section> -->
+</section>
 
 {% if paginator.total_pages > 1 %}
 
