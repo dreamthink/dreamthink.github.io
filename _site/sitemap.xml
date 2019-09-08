@@ -29,6 +29,9 @@
 <loc>http://localhost:4000/thanks</loc>
 </url>
 <url>
-<loc>http://localhost:4000/project/out-of-service-project</loc>
+<loc>http://localhost:4000/project/out-of-service</loc>
+</url>
+<url>
+<loc>http://localhost:4000/project/pong-201</loc>
 </url>
 </urlset>
