@@ -1,6 +1,6 @@
 ---
 title: About me
-subtitle: I'm a fearless creative who is passionate about making a positive impact.
+subtitle: I'm a fearless creative who is passionate about making things that make the world a better place.
 description: Personal is the perfect theme for developers, designers and other creatives.
 featured_image: /images/metro/metro1.jpeg
 ---
