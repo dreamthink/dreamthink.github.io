@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://localhost:3000/?name= -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+</style><style>.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style><style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style><style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+</style><style data-jss="" data-meta="MuiToggleButton">
+.MuiToggleButton-root {
+  color: rgba(0, 0, 0, 0.38);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  height: 48px;
+  padding: 0px 12px;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+.MuiToggleButton-root.Mui-selected {
+  color: rgba(0, 0, 0, 0.54);
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiToggleButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.12);
+}
+.MuiToggleButton-root:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+@media (hover: none) {
+  .MuiToggleButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiToggleButton-root:hover.Mui-disabled {
+  background-color: transparent;
+}
+.MuiToggleButton-root.Mui-selected:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.MuiToggleButton-root.Mui-selected + .MuiToggleButton-root.Mui-selected {
+  border-left: 0;
+  margin-left: 0;
+}
+.MuiToggleButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiToggleButton-sizeSmall {
+  height: 40px;
+  padding: 0px 8px;
+  font-size: 0.8125rem;
+}
+.MuiToggleButton-sizeLarge {
+  height: 56px;
+  padding: 0px 16px;
+  font-size: 0.9375rem;
+}
+</style><style data-jss="" data-meta="MuiToggleButtonGroup">
+.MuiToggleButtonGroup-root {
+  display: inline-flex;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.MuiToggleButtonGroup-grouped {
+  padding: 0px 11px 0px 12px;
+}
+.MuiToggleButtonGroup-grouped:not(:first-child) {
+  border-left: 1px solid transparent;
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.MuiToggleButtonGroup-grouped:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.MuiToggleButtonGroup-groupedSizeSmall {
+  padding: 0px 7px 0px 8px;
+}
+.MuiToggleButtonGroup-groupedSizeLarge {
+  padding: 0px 15px 0px 16px;
+}
+</style></head>
+  <body cz-shortcut-listen="true">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><header class="App-header"><form action="http://localhost:3000/?name=#"><input id="minutes" name="minutes" type="number" value=""><br>Select sound:<div class="MuiToggleButtonGroup-root" role="group"><button class="MuiButtonBase-root MuiToggleButton-root MuiToggleButtonGroup-grouped" tabindex="0" type="button" value="chime" aria-pressed="false"><span class="MuiToggleButton-label">chime</span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiToggleButton-root MuiToggleButtonGroup-grouped" tabindex="0" type="button" value="singingBowl" aria-pressed="false"><span class="MuiToggleButton-label">Tibetan bowl</span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiToggleButton-root MuiToggleButtonGroup-grouped Mui-focusVisible" tabindex="0" type="button" value="nothing" aria-pressed="false"><span class="MuiToggleButton-label">None</span><span class="MuiTouchRipple-root"><span class="MuiTouchRipple-ripple MuiTouchRipple-rippleVisible MuiTouchRipple-ripplePulsate" style="width: 57.2116px; height: 57.2116px; top: -5.60581px; left: 2.39419px;"><span class="MuiTouchRipple-child MuiTouchRipple-childPulsate"></span></span></span></button></div><br><button title="submit" type="submit">Submit</button></form><audio class="audio-element" preload="auto"><source src="/static/media/chime.ae7c5031.mp3"></audio></header></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js"></script><script src="./React App_files/1.chunk.js"></script><script src="./React App_files/main.chunk.js"></script><script src="./React App_files/main.00dce8df9c1ef8ce774b.hot-update.js"></script>
+
+</body></html>
